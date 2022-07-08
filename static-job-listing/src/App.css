@@ -1,0 +1,201 @@
+.App-header {
+  width: 100%;
+  height: 100px;
+  background: hsl(180, 29%, 50%);
+}
+
+.App-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.Job.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  position: sticky;
+  z-index: 99;
+}
+
+.Job.filter .items {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.Job.filter .items input {
+  border: none;
+  outline: none;
+  background: hsl(180, 37%, 81%);
+  padding: 5px 10px;
+  
+}
+
+.Job .filterItems {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.Job .filterItems .filterItem {
+  padding: 5px 10px;
+  background: hsl(180, 31%, 95%);
+  font-size: 0.8em;
+}
+
+.Job .filterItems .fa.times {
+  background: hsl(180, 29%, 50%);
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.Job .clear {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  border: 1px solid hsl(180, 29%, 50%)
+}
+
+.Jobs {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+}
+
+.Jobs .Featured {
+  border-left: 2px solid hsl(180, 29%, 50%);
+}
+
+.Job {
+  width: 75%;
+  margin: 50px auto;
+  background: white;
+  padding: 20px 5%;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px hsl(180, 37%, 81%);
+}
+
+.Jobs .Job .Job-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.Jobs .Job .Top {
+  position: relative;
+}
+
+.Jobs .Job .Top img {
+  width: 50px;
+  border-radius: 5px;
+  top: -40px;
+  position: absolute;
+}
+
+.Jobs .Job .Top .position {
+  margin: 0;
+}
+
+.Jobs .Job .Top .topic {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: hsl(180, 29%, 50%);
+}
+
+.Jobs .Job .Top .topic .new {
+  background: hsl(180, 29%, 50%);
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.Jobs .Job .Top .topic .featured {
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background: hsl(180, 14%, 20%);
+}
+
+.Jobs .Job .Top .description {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgb(161, 161, 161);
+}
+
+/* .Jobs .Job .Top .description p{
+margin: 0;
+padding: 0;
+} */
+
+.Jobs .Job hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: #cecece;
+}
+
+.Jobs .Job .End {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: hsl(180, 29%, 50%);
+}
+
+.Jobs .Job .End p {
+  padding: 5px 10px;
+  margin: 0;
+  background: hsl(180, 52%, 96%);
+}
+
+@media(min-width:900px) {
+  hr {
+    display: none;
+  }
+
+  .Jobs .Job .Job-details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Jobs .Job .Top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Jobs .Job .Top img {
+
+    position: initial;
+  }
+
+  .Jobs .Job .Top .topic {
+    font-size: 0.8em;
+  }
+
+  .Jobs .Job .Top .position {
+    font-size: 0.8em;
+  }
+
+  .Jobs .Job .Top .description {
+    font-size: 0.7em;
+  }
+
+  .Jobs .Job .End {
+    justify-content: end;
+  }
+
+  .Jobs .Job .End p {
+    font-size: 0.8em;
+  }
+}
