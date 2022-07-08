@@ -22,7 +22,6 @@ const Card = ({ Data }) => {
                                 {featured ? <p className='featured'>featured</p> : ""}
                             </div>
                             <p className='position'>{position}</p>
-
                             <div className='description'>
                                 <p>{postedAt}</p>
                                 <FaDotCircle />
