@@ -4,7 +4,7 @@ import { FaDotCircle } from "react-icons/fa"
 const Card = ({ Data }) => {
     const { company, logo, featured, neww,
         position, role, level, postedAt,
-        contract, location, languages, tools
+        contract, location, languages
     } = Data
 
     return (
